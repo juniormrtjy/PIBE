@@ -1,0 +1,24 @@
+.main-header {
+  background: $downriver-950;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+
+    #logo {
+      color: $light-grey;
+    }
+
+    // menu
+    .menu {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+
+      a {
+        color: $light-grey;
+      }
+    }
+  }
+}

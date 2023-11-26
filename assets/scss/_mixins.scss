@@ -1,0 +1,38 @@
+@import 'variables';
+
+@mixin callBtn($color: $downriver-950, $bgColor: $aquamarine-500, $hover: $aquamarine-600) {
+  color: $color;
+  background: $bgColor;
+  display: inline-flex;
+  padding: 1.7rem 9rem;
+  font-size: $text-2x1;
+  border-radius: 9rem;
+  margin-top: 3.8rem;
+  cursor: pointer;
+  transition: .4s;
+
+  &:hover {
+    background-color: $hover;
+  }
+}
+
+// BREAKPOINTS
+@mixin breakpoint($name) {
+  @if $name =='small' {
+    @media(max-width:767px) {
+      @content
+    }
+  }
+
+  @else if $name =='medium' {
+    @media (max-width: 900px) {
+      @content
+    }
+  }
+
+  @else if $name =='large' {
+    @media (max-width:1025px) {
+      @content
+    }
+  }
+}

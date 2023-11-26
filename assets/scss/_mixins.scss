@@ -1,13 +1,13 @@
 @import 'variables';
 
-@mixin callBtn($color: $downriver-950, $bgColor: $aquamarine-500, $hover: $aquamarine-600) {
+@mixin callBtn($p1: 1.7rem, $p2: 9rem, $mt: 3.8rem, $color: $downriver-950, $bgColor: $aquamarine-500, $hover: $aquamarine-600) {
   color: $color;
   background: $bgColor;
   display: inline-flex;
-  padding: 1.7rem 9rem;
+  padding: $p1 $p2;
   font-size: $text-2x1;
   border-radius: 9rem;
-  margin-top: 3.8rem;
+  margin-top: $mt;
   cursor: pointer;
   transition: .4s;
 
